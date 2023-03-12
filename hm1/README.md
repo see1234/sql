@@ -62,4 +62,4 @@ SELECT * FROM mobile_phones WHERE CONCAT(ProductName, Manufacturer) REGEXP '[0-9
 
 SELECT * FROM mobile_phones WHERE CONCAT(ProductName, Manufacturer) LIKE '%8%';
 
-![me]([https://github.com/see1234/sql/](https://github.com/see1234/sql/blob/main/hm1/Screenshot_8.png))
+![me][https://github.com/see1234/sql/blob/main/hm1/Screenshot_8.png]
