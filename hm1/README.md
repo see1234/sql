@@ -47,3 +47,4 @@ SELECT * FROM mobile_phones WHERE CONCAT(ProductName, Manufacturer) REGEXP '[0-9
 **4.4.  Товары, в которых есть ЦИФРА "8"**
 
 SELECT * FROM mobile_phones WHERE CONCAT(ProductName, Manufacturer) LIKE '%8%';
+![me](https://github.com/see1234/sql/)
