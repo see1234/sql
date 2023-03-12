@@ -2,14 +2,23 @@
  
 **1.	Создайте таблицу с мобильными телефонами, используя графический интерфейс. Заполните БД данными. Добавьте скриншот на платформу в качестве ответа на ДЗ**
 create database hm1;
+
 use hm1;
+
 create table mobile_phones (Id INT NOT NULL AUTO_INCREMENT, ProductName VARCHAR(32), Manufacturer VARCHAR(16), ProductCount INT(16), PRICE INT(64), PRIMARY KEY(id));
+
 INSERT INTO mobile_phones (ProductName, Manufacturer, ProductCount, PRICE) VALUES('Iphone X', 'Apple', 3, 76000);
+
 INSERT INTO mobile_phones (ProductName, Manufacturer, ProductCount, PRICE) VALUES('Iphone 8', 'Apple', 2, 51000);
+
 INSERT INTO mobile_phones (ProductName, Manufacturer, ProductCount, PRICE) VALUES('Galaxy S9', 'Samsung', 2, 56000);
+
 INSERT INTO mobile_phones (ProductName, Manufacturer, ProductCount, PRICE) VALUES('Galaxy S8', 'Samsung', 1, 41000);
+
 INSERT INTO mobile_phones (ProductName, Manufacturer, ProductCount, PRICE) VALUES('P20 Pro', 'Huawei', 5, 36000); 
+
 SELECT * FROM mobile_phones;
+
 **Выведите название, производителя и цену для товаров, количество которых превышает 2 (SQL - файл, скриншот, либо сам код)**
 
 SELECT Manufacturer, Price FROM mobile_phones WHERE ProductCount > 2;
