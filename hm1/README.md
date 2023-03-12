@@ -20,43 +20,43 @@ INSERT INTO mobile_phones (ProductName, Manufacturer, ProductCount, PRICE) VALUE
 
 SELECT * FROM mobile_phones;
 
-![me]([https://github.com/see1234/sql/](https://github.com/see1234/sql/blob/main/hm1/Screenshot_1.png))
+![me](https://github.com/see1234/sql/blob/main/hm1/Screenshot_1.png)
 
 **Выведите название, производителя и цену для товаров, количество которых превышает 2 (SQL - файл, скриншот, либо сам код)**
 
 SELECT Manufacturer, Price FROM mobile_phones WHERE ProductCount > 2;
 
-![me]([https://github.com/see1234/sql/](https://github.com/see1234/sql/blob/main/hm1/Screenshot_2.png))
+![me](https://github.com/see1234/sql/blob/main/hm1/Screenshot_2.png)
 
 **Выведите весь ассортимент товаров марки “Samsung”**
 
 SELECT * FROM mobile_phones WHERE Manufacturer='Samsung';
 
-![me]([https://github.com/see1234/sql/](https://github.com/see1234/sql/blob/main/hm1/Screenshot_3.png))
+![me](https://github.com/see1234/sql/blob/main/hm1/Screenshot_3.png)
 
 **Выведите информацию о телефонах, где суммарный чек больше 100 000 и меньше 145 000**
 
 SELECT * FROM mobile_phones WHERE PRICE * ProductCount > 100000 and PRICE * ProductCount < 145000; 
 
-![me]([https://github.com/see1234/sql/](https://github.com/see1234/sql/blob/main/hm1/Screenshot_4.png))
+![me](https://github.com/see1234/sql/blob/main/hm1/Screenshot_4.png)
 
 **4.1. Товары, в которых есть упоминание "Iphone"**
 
 SELECT * FROM mobile_phones WHERE CONCAT(ProductName, Manufacturer) LIKE '%Iphone%';
 
-![me]([https://github.com/see1234/sql/](https://github.com/see1234/sql/blob/main/hm1/Screenshot_5.png))
+![me](https://github.com/see1234/sql/blob/main/hm1/Screenshot_5.png)
 
 **4.2. "Galaxy"**
 
 SELECT * FROM mobile_phones WHERE CONCAT(ProductName, Manufacturer) LIKE '%Galaxy%';
 
-![me]([https://github.com/see1234/sql/](https://github.com/see1234/sql/blob/main/hm1/Screenshot_6.png))
+![me](https://github.com/see1234/sql/blob/main/hm1/Screenshot_6.png)
 
 **4.3.  Товары, в которых есть ЦИФРЫ**
 
 SELECT * FROM mobile_phones WHERE CONCAT(ProductName, Manufacturer) REGEXP '[0-9]';
 
-![me]([https://github.com/see1234/sql/](https://github.com/see1234/sql/blob/main/hm1/Screenshot_7.png))
+![me](https://github.com/see1234/sql/blob/main/hm1/Screenshot_7.png)
 
 **4.4.  Товары, в которых есть ЦИФРА "8"**
 
