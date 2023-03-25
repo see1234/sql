@@ -143,3 +143,29 @@ SELECT an_name, an_price
 FROM Analysis
 JOIN Orders ON Analysis.an_id = Orders.ord_an
 WHERE ord_datetime BETWEEN '2020-02-05' AND '2020-02-12';
+
+
+/* Доп */
+/* 1 Задание
+SELECT MARK, COLOR, COUNT(*) AS COUNT
+FROM AUTO
+WHERE MARK IN ('BMW', 'LADA')
+GROUP BY MARK, COLOR;
+*/
+/* 2 Задание
+SELECT MARK, COUNT(*) AS COUNT
+FROM AUTO
+WHERE MARK NOT IN (
+    SELECT DISTINCT MARK
+    FROM AUTO
+)
+GROUP BY MARK;
+*/
+/* 3 Задание
+SELECT *
+FROM test_a
+WHERE id = id AND id NOT IN (
+    SELECT id
+    FROM test_b
+);
+*/
